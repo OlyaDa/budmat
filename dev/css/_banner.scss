@@ -1,0 +1,288 @@
+////////////////////////BANNER BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+
+.banner {
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+
+  .banner-inner {
+    display: flex;
+  }
+
+  .main-part {
+    min-height: 100vh;
+    flex-basis: 68%;
+    display: flex;
+    padding: 104px 0 70px 0;
+
+    .image{
+      background: url("../../public/images/banner.png") center no-repeat;
+      background-size: cover;
+      box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      min-height: 481px;
+      position: relative;
+    }
+
+
+    .caption {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 147.69%;
+      color: #08203E;
+      position: absolute;
+      display: inline;
+      top: 24%;
+      left: 7%;
+
+      span {
+        background: #FFFFFF;
+        margin: 0;
+        padding: 6px;
+      }
+
+    }
+
+    .circles {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      position: absolute;
+      bottom: -65px;
+      width: 52%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      &:hover {
+        text-decoration: none;
+      }
+
+      .circle {
+        height: 130px;
+        width: 130px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon-roof {
+          font-size: 75px;
+        }
+
+        .icon-water {
+          font-size: 70px;
+        }
+      }
+
+      .text {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 151.5%;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #08203E;
+        margin-top: 17px;
+        max-width: 191px;
+        margin-bottom: 0;
+      }
+    }
+
+    .button {
+      margin-left: 54px;
+      background: #ED1D24;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      border: 2px solid #ED1D24;
+      display: none;
+      .btn {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 17px 36px;
+        text-transform: lowercase;
+      }
+      &:hover {
+        background: #fff;
+        .btn {
+          color: #ED1D24;
+        }
+      }
+    }
+  }
+
+  .sub-part {
+    min-height: 100vh;
+    flex-basis: 32%;
+    display: flex;
+    position: relative;
+    background: #fff;
+    justify-content: center;
+
+    .social {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 85px;
+
+      .icon-instagram {
+        margin: 0 50px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+    .item {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        max-height: 53px;
+        max-width: 53px;
+      }
+
+      span {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 178.18%;
+        max-width: 262px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin-left: 25px;
+      }
+    }
+
+    .middle {
+      margin: 83px 0;
+    }
+  }
+
+  ///media
+
+  @media (max-width: 1216px) {
+    .main-part {
+      padding: 70px 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .banner-inner {
+      flex-direction: column;
+    }
+    .main-part, .sub-part{
+      flex-basis: 100%;
+    }
+
+    .sub-part {
+      display: none;
+    }
+
+    .main-part {
+      padding: 57px 0 40px 0;
+
+      .caption {
+        font-size: 35px;
+        line-height: 125.69%;
+      }
+
+      .button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 232px;
+        bottom: 10px;
+        display: block;
+      }
+
+      .circles {
+        position: absolute;
+        top: 220px;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+
+        .text {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 780px) {
+    .main-part .caption {
+      font-size: 35px;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 591px) {
+    .main-part .caption {
+      font-size: 30px;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    .main-part  .caption {
+      font-size: 18px;
+      line-height: 147.69%;
+   }
+
+    .main-part .item .circle {
+      height: 74px;
+      width: 74px;
+
+      .icon-roof {
+        font-size: 43px;
+      }
+
+      .icon-water {
+        font-size: 40px;
+      }
+
+      .text {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 151.5%;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .main-part .item .text {
+      font-size: 11px;
+      max-width: 272px;
+    }
+  }
+
+}
