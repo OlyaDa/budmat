@@ -4,6 +4,20 @@ $font_text: 'Montserrat', sans-serif;
 .footer {
   background: #F2F2F2;
   padding: 72px 0 74px 0;
+  position: relative;
+  overflow: hidden;
+
+  .vector {
+    width: 206px;
+    height: 390px;
+    position: absolute;
+    bottom: -240px;
+    right: 0;
+  }
+
+  .index {
+    z-index: 2;
+  }
 
   .footer-inner {
     display: flex;
@@ -105,6 +119,7 @@ $font_text: 'Montserrat', sans-serif;
     padding: 44px 58px 45px 58px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
+    z-index: 2;
 
     .form-title {
       font-family: $font_text;
@@ -218,6 +233,10 @@ $font_text: 'Montserrat', sans-serif;
 
   @media (max-width: 991px) {
     padding: 72px 0 74px 0;
+
+    .vector {
+      display: none;
+    }
 
     .caption {
       margin-bottom: 40px;

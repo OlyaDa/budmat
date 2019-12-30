@@ -162,7 +162,11 @@ $font_text: 'Montserrat', sans-serif;
   @media (max-width: 991px) {
     padding: 80px 0 40px 0;
 
-      .row {
+    .vector {
+      display: none;
+    }
+
+    .row {
         flex-direction: column-reverse;
       }
 

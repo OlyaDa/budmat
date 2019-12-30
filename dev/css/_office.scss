@@ -12,6 +12,22 @@ $font_text: 'Montserrat', sans-serif;
     position: relative;
   }
 
+  .vector-left {
+    width: 247px;
+    height: 390px;
+    position: absolute;
+    top: -280px;
+    left: 0;
+  }
+
+  .vector-right {
+    width: 255px;
+    height: 390px;
+    position: absolute;
+    right: 0;
+    bottom: -295px;
+  }
+
   .office-holder {
     width: 58%;
     margin-left: auto;
@@ -127,6 +143,7 @@ $font_text: 'Montserrat', sans-serif;
     line-height: 147.69%;
     color: rgba(237, 29, 36, 0.9);
     margin: 0;
+    z-index: 2;
     span {
       color: rgba(0, 0, 0, 0.9);
       margin-left: -15px;
@@ -297,6 +314,10 @@ $font_text: 'Montserrat', sans-serif;
 
   @media (max-width: 991px) {
     padding: 80px 0 80px 0;
+
+    .vector {
+      display: none;
+    }
 
     .contact-inner {
       flex-direction: column;

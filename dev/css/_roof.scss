@@ -5,6 +5,14 @@ $font_text: 'Montserrat', sans-serif;
   background: #ffffff;
   overflow: hidden;
 
+  .vector {
+    width: 206px;
+    height: 390px;
+    position: absolute;
+    bottom: -240px;
+    right: 0;
+  }
+
   .budmat {
     font-family: $font_text;
     font-style: normal;
@@ -25,6 +33,7 @@ $font_text: 'Montserrat', sans-serif;
     align-items: center;
     margin-top: 55px;
     margin-bottom: 169px;
+    position: relative;
   }
   .image {
     background: url("../../public/images/roof.png") center no-repeat;
@@ -32,6 +41,7 @@ $font_text: 'Montserrat', sans-serif;
     display: flex;
     flex-basis: 45%;
     height: 364px;
+    z-index: 1;
   }
 
   .roof-body {
@@ -213,6 +223,10 @@ $font_text: 'Montserrat', sans-serif;
   }
 
   @media (max-width: 991px) {
+
+    .vector {
+      display: none;
+    }
 
     .roof-info .lines.third {
       display: none;

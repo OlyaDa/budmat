@@ -2,9 +2,17 @@
 $font_text: 'Montserrat', sans-serif;
 
 .banner {
-  overflow: hidden;
   position: relative;
   min-height: 100vh;
+
+  .vector {
+    width: 247px;
+    height: 390px;
+    position: absolute;
+    bottom: -270px;
+    right: 0;
+    z-index: 1;
+  }
 
   .banner-inner {
     display: flex;
@@ -23,6 +31,7 @@ $font_text: 'Montserrat', sans-serif;
       width: 100%;
       min-height: 481px;
       position: relative;
+      z-index: 2;
     }
 
 
@@ -37,13 +46,27 @@ $font_text: 'Montserrat', sans-serif;
       display: inline;
       top: 24%;
       left: 7%;
+      z-index: 2;
 
       span {
         background: #FFFFFF;
         margin: 0;
         padding: 6px;
       }
+    }
 
+    .water-line {
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 110px;
+        height: 1px;
+        background: #D8D8D8;
+        top: 30px;
+        left: -136px;
+      }
     }
 
     .circles {
@@ -108,6 +131,7 @@ $font_text: 'Montserrat', sans-serif;
       border-radius: 4px;
       border: 2px solid #ED1D24;
       display: none;
+      z-index: 3;
       .btn {
         font-family: "Open Sans", sans-serif;
         font-style: normal;
@@ -137,10 +161,45 @@ $font_text: 'Montserrat', sans-serif;
     background: #fff;
     justify-content: center;
 
+    .social a {
+      color: #353535;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
     .social {
       display: flex;
       align-items: flex-end;
       margin-bottom: 85px;
+
+      .icon-facebook {
+        position: relative;
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 110px;
+          height: 1px;
+          background: #D8D8D8;
+          left: -133px;
+          bottom: 7px;
+        }
+      }
+
+      .icon-youtube {
+        position: relative;
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 110px;
+          height: 1px;
+          background: #D8D8D8;
+          right: -133px;
+          bottom: 7px;
+        }
+      }
 
       .icon-instagram {
         margin: 0 50px;
@@ -186,6 +245,17 @@ $font_text: 'Montserrat', sans-serif;
   }
 
   @media (max-width: 991px) {
+    .vector {
+      display: none;
+    }
+
+    .main-part .water-line {
+      position: relative;
+      &:before {
+        display: none;
+      }
+    }
+
     .banner-inner {
       flex-direction: column;
     }

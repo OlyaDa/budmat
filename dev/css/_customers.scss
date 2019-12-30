@@ -3,8 +3,16 @@ $font_text: 'Montserrat', sans-serif;
 
 .customers {
   background: #ffffff;
-  overflow: hidden;
   padding: 115px 0 0 0;
+  position: relative;
+
+  .vector {
+    width: 269px;
+    height: 390px;
+    position: absolute;
+    bottom: -184px;
+    left: 0;
+  }
 
   .customers-inner {
     display: flex;
@@ -19,6 +27,7 @@ $font_text: 'Montserrat', sans-serif;
     margin-bottom: 45px;
     //width: 649px;
     height: 364px;
+    z-index: 1;
   }
 
   .customers-body {
@@ -41,6 +50,7 @@ $font_text: 'Montserrat', sans-serif;
     margin-bottom: 33px;
     margin-left: auto;
     position: relative;
+    z-index: 2;
 
     strong {
       font-family: "Open Sans", sans-serif;
@@ -116,6 +126,10 @@ $font_text: 'Montserrat', sans-serif;
 
   @media (max-width: 991px) {
     padding: 80px 0 0 0;
+
+    .vector {
+      display: none;
+    }
 
     .customers-inner {
       flex-direction: column-reverse;

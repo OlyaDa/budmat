@@ -175,8 +175,9 @@ img {
   background: #FFFFFF;
   max-width: 538px;
   margin: 0 auto;
+  text-align: center;
   position: relative;
-  padding: 44px 0 45px 0;
+  padding: 45px 0 45px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 
   form {
@@ -286,15 +287,17 @@ img {
 
   ///media
 
-  //@media (max-width: 1070px) {
-  //  form {
-  //    padding: 44px 30px 44px 30px;
-  //
-  //    input {
-  //      width: 350px;
-  //    }
-  //  }
-  //}
+  @media (max-width: 580px) {
+    padding: 45px 40px 45px 40px;
+    form {
+      padding: 20px 0 20px 0;
+      display: block;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
   //
   //@media (max-width: 991px) {
   //  padding: 72px 0 74px 0;
