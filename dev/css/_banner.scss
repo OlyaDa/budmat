@@ -10,7 +10,7 @@ $font_text: 'Montserrat', sans-serif;
     height: 390px;
     position: absolute;
     bottom: -270px;
-    right: 0;
+    right: -44px;
     z-index: 1;
   }
 
@@ -81,6 +81,15 @@ $font_text: 'Montserrat', sans-serif;
       margin: 0 auto;
     }
 
+    .circles2 {
+      width: 75%;
+    }
+
+    .circles-holder {
+      display: flex;
+      align-items: baseline;
+    }
+
     .item {
       display: flex;
       justify-content: center;
@@ -103,9 +112,14 @@ $font_text: 'Montserrat', sans-serif;
           font-size: 75px;
         }
 
-        .icon-water {
+        .icon-water, .icon-box1, .icon-truck, .icon-warranty {
           font-size: 70px;
         }
+      }
+
+      .circle2 {
+        margin-right: 35px;
+        margin-left: 35px;
       }
 
       .text {
@@ -159,7 +173,7 @@ $font_text: 'Montserrat', sans-serif;
     display: flex;
     position: relative;
     background: #fff;
-    justify-content: center;
+    //justify-content: center;
 
     .social a {
       color: #353535;
@@ -172,6 +186,7 @@ $font_text: 'Montserrat', sans-serif;
       display: flex;
       align-items: flex-end;
       margin-bottom: 85px;
+      margin-left: 92px;
 
       .icon-facebook {
         position: relative;
@@ -182,7 +197,7 @@ $font_text: 'Montserrat', sans-serif;
           width: 110px;
           height: 1px;
           background: #D8D8D8;
-          left: -133px;
+          left: -151px;
           bottom: 7px;
         }
       }
@@ -196,7 +211,7 @@ $font_text: 'Montserrat', sans-serif;
           width: 110px;
           height: 1px;
           background: #D8D8D8;
-          right: -133px;
+          right: -151px;
           bottom: 7px;
         }
       }
@@ -301,19 +316,33 @@ $font_text: 'Montserrat', sans-serif;
     }
   }
 
-  @media (max-width: 780px) {
-    .main-part .caption {
-      font-size: 35px;
-      left: 0;
-    }
-  }
-
-  @media (max-width: 591px) {
+  @media (max-width: 856px) {
     .main-part .caption {
       font-size: 30px;
       left: 0;
     }
   }
+
+  @media (max-width: 630px) {
+    .main-part .item  .circle2 {
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+  }
+
+  //@media (max-width: 780px) {
+  //  .main-part .caption {
+  //    font-size: 35px;
+  //    left: 0;
+  //  }
+  //}
+  //
+  //@media (max-width: 591px) {
+  //  .main-part .caption {
+  //    font-size: 30px;
+  //    left: 0;
+  //  }
+  //}
 
   @media (max-width: 576px) {
 
@@ -321,6 +350,11 @@ $font_text: 'Montserrat', sans-serif;
       font-size: 18px;
       line-height: 147.69%;
    }
+
+    .main-part .item  .circle2 {
+      margin-right: 12px;
+      margin-left: 12px;
+    }
 
     .main-part .item .circle {
       height: 74px;
@@ -330,7 +364,7 @@ $font_text: 'Montserrat', sans-serif;
         font-size: 43px;
       }
 
-      .icon-water {
+      .icon-water, .icon-box1, .icon-truck, .icon-warranty {
         font-size: 40px;
       }
 

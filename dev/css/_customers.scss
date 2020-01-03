@@ -12,6 +12,7 @@ $font_text: 'Montserrat', sans-serif;
     position: absolute;
     bottom: -184px;
     left: 0;
+    z-index: 1;
   }
 
   .customers-inner {
@@ -27,7 +28,7 @@ $font_text: 'Montserrat', sans-serif;
     margin-bottom: 45px;
     //width: 649px;
     height: 364px;
-    z-index: 1;
+    z-index: 2;
   }
 
   .customers-body {

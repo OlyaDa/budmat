@@ -39,6 +39,7 @@ $(document).ready(function() {
     });
 });
 
+//slider for "office"
 
 $('.slider-for').slick({
     slidesToShow: 1,
@@ -67,8 +68,10 @@ $('.soffits-slider').slick({
     infinite: true,
     arrows: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     speed: 1000,
+    centerMode: true,
+    centerPadding: '0px',
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
     responsive: [
@@ -76,6 +79,14 @@ $('.soffits-slider').slick({
             breakpoint: 993,
             settings: {
                 slidesToShow: 3,
+            }
+        },
+
+        {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 3,
+                arrows: false,
             }
         },
 

@@ -4,6 +4,12 @@ $caption_text: Cera Pro, sans-serif;
 @import "header";
 @import "banner";
 @import "customers";
+@import "venecja";
+@import "murano";
+@import "ferrara";
+@import "rialto";
+@import "flamingo";
+@import "proaqua";
 @import "office";
 @import "certificates";
 @import "water";
@@ -298,71 +304,4 @@ img {
       }
     }
   }
-  //
-  //@media (max-width: 991px) {
-  //  padding: 72px 0 74px 0;
-  //
-  //  .caption {
-  //    margin-bottom: 40px;
-  //  }
-  //
-  //  form {
-  //    margin-top: 40px;
-  //  }
-  //}
-  //
-  //@media (max-width: 768px) {
-  //  padding: 40px 0 40px 0;
-  //
-  //  .caption {
-  //    font-size: 25px;
-  //    line-height: 138.18%;
-  //    margin-bottom: 20px;
-  //  }
-  //}
-  //
-  //@media (max-width: 576px) {
-  //  .caption {
-  //    font-size: 20px;
-  //  }
-  //}
-  //
-  //@media (max-width: 530px) {
-  //  .social {
-  //    padding-right: 15px;
-  //  }
-  //  .phones {
-  //    padding-left: 15px;
-  //  }
-  //}
-  //
-  //@media (max-width: 470px) {
-  //  form input {
-  //    width: 245px;
-  //  }
-  //  form button {
-  //    width: 245px;
-  //  }
-  //}
-  //
-  //@media (max-width: 375px) {
-  //  .contact {
-  //    flex-direction: column;
-  //    align-items: center;
-  //  }
-  //
-  //  form {
-  //    padding: 44px 20px 44px 20px;
-  //  }
-  //
-  //  .social {
-  //    border-right: none;
-  //    .facebook, .instagram, .youtube {
-  //      margin-bottom: 22px;
-  //    }
-  //  }
-  //  .phones {
-  //    text-align: center;
-  //  }
-  //}
 }

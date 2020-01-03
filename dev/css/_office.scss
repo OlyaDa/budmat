@@ -20,6 +20,10 @@ $font_text: 'Montserrat', sans-serif;
     left: 0;
   }
 
+  .container {
+    z-index: 2;
+  }
+
   .vector-right {
     width: 255px;
     height: 390px;
