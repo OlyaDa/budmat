@@ -94,26 +94,27 @@ $('.soffits-slider').slick({
             breakpoint: 701,
             settings: {
                 slidesToShow: 2,
-            }
-        },
-
-        {
-            breakpoint: 577,
-            settings: {
-                slidesToShow: 2,
                 arrows: false,
-                autoplay: false,
             }
         },
 
         {
-            breakpoint: 371,
+            breakpoint: 400,
             settings: {
                 slidesToShow: 1,
                 arrows: false,
                 autoplay: false,
             }
-        }
+        },
+
+        // {
+        //     breakpoint: 371,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         arrows: false,
+        //         autoplay: false,
+        //     }
+        // }
     ]
 });
 
