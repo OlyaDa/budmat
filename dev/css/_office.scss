@@ -58,8 +58,8 @@ $font_text: 'Montserrat', sans-serif;
   }
 
   .image {
-    background: url("../../public/images/office.png") center no-repeat;
-    background-size: cover;
+    //background: url("../../public/images/office.png") center no-repeat;
+    //background-size: cover;
     display: flex;
     flex-basis: 52%;
     width: 985px;
@@ -67,13 +67,59 @@ $font_text: 'Montserrat', sans-serif;
   }
 
   .image-small {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/office.png") center no-repeat;
-    background-size: cover;
+    //background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35));
+    //background-size: cover;
     display: flex;
     flex-basis: 52%;
     width: 112px;
     height: 77px;
     margin-left: 35px !important;
+  }
+
+  .image-small.first {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off01.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-small.second {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off02.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-small.third {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off03.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-small.fours {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off04.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-small.fives {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off05.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .first {
+    background: url("../../public/images/off01.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .second {
+    background: url("../../public/images/off02.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .third {
+    background: url("../../public/images/off03.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .fours {
+    background: url("../../public/images/off04.jpg") center no-repeat;
+    background-size: cover;
+  }
+  .fives {
+    background: url("../../public/images/off05.jpg") center no-repeat;
+    background-size: cover;
   }
 
   .holder {

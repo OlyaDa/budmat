@@ -39,6 +39,30 @@ $(document).ready(function() {
     });
 });
 
+//slider for "rialto"
+
+$('.slider-for2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    fade: true,
+    asNavFor: '.slider-nav2',
+    infinite: true,
+});
+
+$('.slider-nav2').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for2',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    arrows: false,
+    infinite: true,
+});
+
+
 //slider for "office"
 
 $('.slider-for').slick({
@@ -106,15 +130,6 @@ $('.soffits-slider').slick({
                 autoplay: false,
             }
         },
-
-        // {
-        //     breakpoint: 371,
-        //     settings: {
-        //         slidesToShow: 1,
-        //         arrows: false,
-        //         autoplay: false,
-        //     }
-        // }
     ]
 });
 

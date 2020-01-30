@@ -6,6 +6,15 @@ $font_text: 'Montserrat', sans-serif;
   background: #ffffff;
   position: relative;
 
+  .venecja-slider {
+    outline: none !important;
+  }
+
+  .slick-list {
+    width: 77%;
+    margin-right: auto;
+  }
+
   .vector-top {
     width: 346px;
     height: 304px;
@@ -92,7 +101,8 @@ $font_text: 'Montserrat', sans-serif;
       max-width: 92px;
       max-height: 92px;
       box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      margin-right: 15px;
+      margin-right: 18px;
+      margin-left: 18px;
       &:last-child {
         margin-right: 0;
       }
@@ -137,63 +147,63 @@ $font_text: 'Montserrat', sans-serif;
     }
   }
 
-    .button-one {
-      display: inline-block;
-      background: #ED1D24;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      border-radius: 4px;
-      border: 2px solid #ED1D24;
-      margin-right: 10px;
-      z-index: 2;
+  .button-one {
+    display: inline-block;
+    background: #ED1D24;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    border: 2px solid #ED1D24;
+    margin-right: 10px;
+    z-index: 2;
+    .btn {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 17px 62px;
+    }
+    &:hover {
+      background: #fff;
       .btn {
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 18px;
-        letter-spacing: 0.1em;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 17px 62px;
-      }
-      &:hover {
-        background: #fff;
-        .btn {
-          color: #ED1D24;
-        }
+        color: #ED1D24;
       }
     }
+  }
 
   .buttons {
     display: flex;
     justify-content: space-between;
   }
 
-    .button-second {
-      display: inline-block;
-      background: #ED1D24;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      border-radius: 4px;
-      border: 2px solid #ED1D24;
-      z-index: 2;
+  .button-second {
+    display: inline-block;
+    background: #ED1D24;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    border: 2px solid #ED1D24;
+    z-index: 2;
+    .btn {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 17px 44px;
+    }
+    &:hover {
+      background: #fff;
       .btn {
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 18px;
-        letter-spacing: 0.1em;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 17px 44px;
-      }
-      &:hover {
-        background: #fff;
-        .btn {
-          color: #ED1D24;
-        }
+        color: #ED1D24;
       }
     }
+  }
 
   /////////////////////////////////
   .venecja-info {
@@ -249,6 +259,11 @@ $font_text: 'Montserrat', sans-serif;
 
     padding: 80px 0 0 0;
     text-align: center;
+
+    .venecja-slider {
+      width: 627px;
+      margin: auto;
+    }
 
     .center {
       text-align: center;
@@ -364,9 +379,24 @@ $font_text: 'Montserrat', sans-serif;
 
   }
 
+  @media (max-width: 680px) {
+    .venecja-slider {
+      width: 95%;
+    }
+
+    .colors .color-img {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+
   @media (max-width: 576px) {
     .caption {
       font-size: 20px;
+    }
+    .colors .color-img {
+      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 
@@ -386,6 +416,11 @@ $font_text: 'Montserrat', sans-serif;
   }
 
   @media (max-width: 487px) {
+    .colors .color-img {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
     .buttons {
       .button-one {
         margin-bottom: 20px;

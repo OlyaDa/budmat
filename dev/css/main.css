@@ -645,6 +645,11 @@
   padding-top: 120px;
   background: #ffffff;
   position: relative; }
+  .venecja .venecja-slider {
+    outline: none !important; }
+  .venecja .slick-list {
+    width: 77%;
+    margin-right: auto; }
   .venecja .vector-top {
     width: 346px;
     height: 304px;
@@ -714,7 +719,8 @@
       max-width: 92px;
       max-height: 92px;
       box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      margin-right: 15px; }
+      margin-right: 18px;
+      margin-left: 18px; }
       .venecja .colors .color-img:last-child {
         margin-right: 0; }
   .venecja .image-venecja {
@@ -825,6 +831,9 @@
     .venecja {
       padding: 80px 0 0 0;
       text-align: center; }
+      .venecja .venecja-slider {
+        width: 627px;
+        margin: auto; }
       .venecja .center {
         text-align: center; }
       .venecja .right {
@@ -885,9 +894,18 @@
         padding-top: 20px; }
         .venecja .venecja-info .item {
           margin-bottom: 20px; } }
+  @media (max-width: 680px) {
+    .venecja .venecja-slider {
+      width: 95%; }
+    .venecja .colors .color-img {
+      margin-left: 16px;
+      margin-right: 16px; } }
   @media (max-width: 576px) {
     .venecja .caption {
-      font-size: 20px; } }
+      font-size: 20px; }
+    .venecja .colors .color-img {
+      margin-left: 10px;
+      margin-right: 10px; } }
   @media (max-width: 508px) {
     .venecja .buttons {
       flex-wrap: wrap; }
@@ -898,6 +916,9 @@
         margin-right: 7px;
         margin-left: 7px; } }
   @media (max-width: 487px) {
+    .venecja .colors .color-img {
+      margin-left: 5px;
+      margin-right: 5px; }
     .venecja .buttons .button-one {
       margin-bottom: 20px; }
       .venecja .buttons .button-one .btn {
@@ -908,6 +929,11 @@
   padding-bottom: 85px;
   background: #ffffff;
   overflow: hidden; }
+  .murano .murano-slider {
+    outline: none !important; }
+  .murano .slick-list {
+    width: 77%;
+    margin-left: auto; }
   .murano .vector {
     width: 390px;
     height: 304px;
@@ -927,7 +953,8 @@
       max-width: 92px;
       max-height: 92px;
       box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      margin-right: 15px; }
+      margin-right: 18px;
+      margin-left: 18px; }
       .murano .colors .color-img:last-child {
         margin-right: 0; }
   .murano .image-murano {
@@ -1009,6 +1036,9 @@
     .murano {
       padding-top: 0;
       padding-bottom: 80px; }
+      .murano .murano-slider {
+        width: 627px;
+        margin: auto; }
       .murano .vector {
         display: none; }
       .murano .image-murano {
@@ -1048,9 +1078,18 @@
           margin: auto; }
       .murano .image-murano {
         margin-bottom: 20px; } }
+  @media (max-width: 680px) {
+    .murano .murano-slider {
+      width: 95%; }
+    .murano .colors .color-img {
+      margin-left: 16px;
+      margin-right: 16px; } }
   @media (max-width: 576px) {
     .murano .caption {
-      font-size: 20px; } }
+      font-size: 20px; }
+    .murano .colors .color-img {
+      margin-left: 10px;
+      margin-right: 10px; } }
   @media (max-width: 508px) {
     .murano .buttons {
       flex-wrap: wrap; }
@@ -1061,6 +1100,9 @@
         margin-right: 7px;
         margin-left: 7px; } }
   @media (max-width: 487px) {
+    .murano .colors .color-img {
+      margin-left: 5px;
+      margin-right: 5px; }
     .murano .buttons .button-one {
       margin-bottom: 20px; }
       .murano .buttons .button-one .btn {
@@ -1070,6 +1112,11 @@
   padding-top: 29px;
   background: #ffffff;
   position: relative; }
+  .ferrara .ferrara-slider {
+    outline: none !important; }
+  .ferrara .slick-list {
+    width: 77%;
+    margin-right: auto; }
   .ferrara .vector-top {
     width: 346px;
     height: 304px;
@@ -1135,7 +1182,8 @@
       max-width: 92px;
       max-height: 92px;
       box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      margin-right: 15px; }
+      margin-right: 18px;
+      margin-left: 18px; }
       .ferrara .colors .color-img:last-child {
         margin-right: 0; }
   .ferrara .image-ferrara {
@@ -1246,6 +1294,9 @@
     .ferrara {
       padding-top: 80px;
       padding-bottom: 40px; }
+      .ferrara .ferrara-slider {
+        width: 627px;
+        margin: auto; }
       .ferrara .button-one .btn {
         padding: 17px 62px; }
       .ferrara .button-second .btn {
@@ -1297,6 +1348,18 @@
         padding-top: 20px; }
         .ferrara .ferrara-info .item {
           margin-bottom: 20px; } }
+  @media (max-width: 680px) {
+    .ferrara .ferrara-slider {
+      width: 95%; }
+    .ferrara .colors .color-img {
+      margin-left: 16px;
+      margin-right: 16px; } }
+  @media (max-width: 576px) {
+    .ferrara .caption {
+      font-size: 20px; }
+    .ferrara .colors .color-img {
+      margin-left: 10px;
+      margin-right: 10px; } }
   @media (max-width: 508px) {
     .ferrara .buttons {
       flex-wrap: wrap; }
@@ -1307,6 +1370,9 @@
         margin-right: 7px;
         margin-left: 7px; } }
   @media (max-width: 487px) {
+    .ferrara .colors .color-img {
+      margin-left: 5px;
+      margin-right: 5px; }
     .ferrara .buttons .button-one {
       margin-bottom: 20px; }
       .ferrara .buttons .button-one .btn {
@@ -1315,6 +1381,11 @@
 .rialto {
   padding-top: 61px;
   background: #ffffff; }
+  .rialto .rialto-slider {
+    outline: none !important; }
+  .rialto .slick-list {
+    width: 77%;
+    margin-left: auto; }
   .rialto .vector {
     width: 390px;
     height: 304px;
@@ -1334,7 +1405,8 @@
       max-width: 92px;
       max-height: 92px;
       box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      margin-right: 15px; }
+      margin-right: 18px;
+      margin-left: 18px; }
       .rialto .colors .color-img:last-child {
         margin-right: 0; }
   .rialto .image-rialto {
@@ -1414,6 +1486,9 @@
     .rialto {
       padding-top: 0;
       padding-bottom: 0; }
+      .rialto .rialto-slider {
+        width: 627px;
+        margin: auto; }
       .rialto .vector {
         display: none; }
       .rialto .image-rialto {
@@ -1453,9 +1528,18 @@
       margin-bottom: 20px; }
     .rialto .image-roof {
       margin: 20px auto; } }
+  @media (max-width: 680px) {
+    .rialto .rialto-slider {
+      width: 95%; }
+    .rialto .colors .color-img {
+      margin-left: 16px;
+      margin-right: 16px; } }
   @media (max-width: 576px) {
     .rialto .caption {
-      font-size: 20px; } }
+      font-size: 20px; }
+    .rialto .colors .color-img {
+      margin-left: 10px;
+      margin-right: 10px; } }
   @media (max-width: 508px) {
     .rialto .buttons {
       flex-wrap: wrap; }
@@ -1466,6 +1550,9 @@
         margin-right: 7px;
         margin-left: 7px; } }
   @media (max-width: 487px) {
+    .rialto .colors .color-img {
+      margin-left: 5px;
+      margin-right: 5px; }
     .rialto .buttons .button-one {
       margin-bottom: 20px; }
       .rialto .buttons .button-one .btn {
@@ -2104,20 +2191,46 @@
     bottom: -14px;
     right: 0; }
   .office .image {
-    background: url("../../public/images/office.png") center no-repeat;
-    background-size: cover;
     display: flex;
     flex-basis: 52%;
     width: 985px;
     height: 481px; }
   .office .image-small {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/office.png") center no-repeat;
-    background-size: cover;
     display: flex;
     flex-basis: 52%;
     width: 112px;
     height: 77px;
     margin-left: 35px !important; }
+  .office .image-small.first {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off01.jpg") center no-repeat;
+    background-size: cover; }
+  .office .image-small.second {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off02.jpg") center no-repeat;
+    background-size: cover; }
+  .office .image-small.third {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off03.jpg") center no-repeat;
+    background-size: cover; }
+  .office .image-small.fours {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off04.jpg") center no-repeat;
+    background-size: cover; }
+  .office .image-small.fives {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../../public/images/off05.jpg") center no-repeat;
+    background-size: cover; }
+  .office .first {
+    background: url("../../public/images/off01.jpg") center no-repeat;
+    background-size: cover; }
+  .office .second {
+    background: url("../../public/images/off02.jpg") center no-repeat;
+    background-size: cover; }
+  .office .third {
+    background: url("../../public/images/off03.jpg") center no-repeat;
+    background-size: cover; }
+  .office .fours {
+    background: url("../../public/images/off04.jpg") center no-repeat;
+    background-size: cover; }
+  .office .fives {
+    background: url("../../public/images/off05.jpg") center no-repeat;
+    background-size: cover; }
   .office .holder {
     max-width: 380px;
     margin-left: auto;
@@ -3475,6 +3588,21 @@ body {
 img {
   width: 100%;
   height: auto; }
+
+.office .slider-for {
+  outline: none !important; }
+
+.office .slider-nav {
+  outline: none !important; }
+
+.slider-for2 {
+  outline: none !important; }
+
+.slider-nav2 {
+  outline: none !important; }
+
+.color-img, .image-roof {
+  outline: none !important; }
 
 .popup {
   background: #FFFFFF;
